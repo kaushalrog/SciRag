@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What architecture does AntBot use for navigation?",
+    "predicted_confidence": 0.92,
+    "correct": true
+  },
+  {
+    "question": "Compare the retrieval latency of dense versus sparse methods.",
+    "predicted_confidence": 0.85,
+    "correct": true
+  },
+  {
+    "question": "What reinforcement learning reward function was used in AntBot?",
+    "predicted_confidence": 0.45,
+    "correct": false
+  },
+  {
+    "question": "Which quantum computing framework was evaluated for accelerating ChromaDB indexing?",
+    "predicted_confidence": 0.38,
+    "correct": false
+  },
+  {
+    "question": "What is the maximum embedding length for all-MiniLM-L6-v2?",
+    "predicted_confidence": 0.88,
+    "correct": true
+  },
+  {
+    "question": "Is Llama 3.1 70B parameter model evaluated in the AntBot paper?",
+    "predicted_confidence": 0.55,
+    "correct": false
+  },
+  {
+    "question": "How does BM25 handle out-of-vocabulary terms?",
+    "predicted_confidence": 0.76,
+    "correct": true
+  },
+  {
+    "question": "What was the exact battery capacity used in the AntBot hardware prototype?",
+    "predicted_confidence": 0.62,
+    "correct": false
+  }
+]

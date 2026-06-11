@@ -1,0 +1,27 @@
+dataset:
+  corpus_size_limit: 150
+  tiers:
+    - direct
+    - synthesis
+    - unanswerable
+  metrics:
+    - faithfulness
+    - hallucination_rate
+    - ece
+    - auroc
+    - abstention_precision
+    - abstention_recall
+
+thresholds:
+  abstention_tau: 0.65  # Default threshold, swept during evaluation
+
+fusion_weights:
+  alpha_retrieval: 0.4
+  beta_reliability: 0.3
+  gamma_citation: 0.2
+  delta_recency: 0.1
+
+confidence_weights:
+  rc: 0.5
+  ac: 0.3
+  cc: 0.2
