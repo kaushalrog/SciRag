@@ -1,0 +1,12 @@
+numpy
+scipy
+scikit-learn
+sentence-transformers
+chromadb
+matplotlib
+PyMuPDF
+fastapi
+typer
+pydantic
+tqdm
+tqdm

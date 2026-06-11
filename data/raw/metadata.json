@@ -1,0 +1,1564 @@
+[
+  {
+    "id": "1711.10137v2",
+    "title": "One-Shot Reinforcement Learning for Robot Navigation with Interactive Replay",
+    "authors": [
+      "Jake Bruce",
+      "Niko Suenderhauf",
+      "Piotr Mirowski",
+      "Raia Hadsell",
+      "Michael Milford"
+    ],
+    "year": 2017,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1711.10137v2.pdf",
+    "url": "http://arxiv.org/abs/1711.10137v2"
+  },
+  {
+    "id": "2312.07214v3",
+    "title": "Exploring Large Language Models to Facilitate Variable Autonomy for Human-Robot Teaming",
+    "authors": [
+      "Younes Lakhnati",
+      "Max Pascher",
+      "Jens Gerken"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2312.07214v3.pdf",
+    "url": "http://arxiv.org/abs/2312.07214v3"
+  },
+  {
+    "id": "2405.10743v1",
+    "title": "Occupancy-SLAM: Simultaneously Optimizing Robot Poses and Continuous Occupancy Map",
+    "authors": [
+      "Liang Zhao",
+      "Yingyu Wang",
+      "Shoudong Huang"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2405.10743v1.pdf",
+    "url": "http://arxiv.org/abs/2405.10743v1"
+  },
+  {
+    "id": "2507.17317v2",
+    "title": "HuNavSim 2.0: An Enhanced Human Navigation Simulator for Human-Aware Robot Navigation",
+    "authors": [
+      "Miguel Escudero-Jim\u00e9nez",
+      "No\u00e9 P\u00e9rez-Higueras",
+      "Andr\u00e9s Mart\u00ednez-Silva",
+      "Fernando Caballero",
+      "Luis Merino"
+    ],
+    "year": 2025,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2507.17317v2.pdf",
+    "url": "http://arxiv.org/abs/2507.17317v2"
+  },
+  {
+    "id": "2206.03223v3",
+    "title": "Sensors for Mobile Robots",
+    "authors": [
+      "Henrik Andreasson",
+      "Giorgio Grisetti",
+      "Todor Stoyanov",
+      "Alberto Pretto"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2206.03223v3.pdf",
+    "url": "http://arxiv.org/abs/2206.03223v3"
+  },
+  {
+    "id": "2504.02477v3",
+    "title": "Multimodal Fusion and Vision-Language Models: A Survey for Robot Vision",
+    "authors": [
+      "Xiaofeng Han",
+      "Shunpeng Chen",
+      "Zenghuang Fu",
+      "Zhe Feng",
+      "Lue Fan",
+      "Dong An",
+      "Changwei Wang",
+      "Li Guo",
+      "Weiliang Meng",
+      "Xiaopeng Zhang",
+      "Rongtao Xu",
+      "Shibiao Xu"
+    ],
+    "year": 2025,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2504.02477v3.pdf",
+    "url": "http://arxiv.org/abs/2504.02477v3"
+  },
+  {
+    "id": "2505.04095v2",
+    "title": "Scalable Aerial GNSS Localization for Marine Robots",
+    "authors": [
+      "Shuo Wen",
+      "Edwin Meriaux",
+      "Mariana Sosa Guzm\u00e1n",
+      "Charlotte Morissette",
+      "Chloe Si",
+      "Bobak Baghi",
+      "Gregory Dudek"
+    ],
+    "year": 2025,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2505.04095v2.pdf",
+    "url": "http://arxiv.org/abs/2505.04095v2"
+  },
+  {
+    "id": "2407.08162v2",
+    "title": "Improving Visual Place Recognition Based Robot Navigation By Verifying Localization Estimates",
+    "authors": [
+      "Owen Claxton",
+      "Connor Malone",
+      "Helen Carson",
+      "Jason Ford",
+      "Gabe Bolton",
+      "Iman Shames",
+      "Michael Milford"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2407.08162v2.pdf",
+    "url": "http://arxiv.org/abs/2407.08162v2"
+  },
+  {
+    "id": "2302.14334v2",
+    "title": "Design of an Adaptive Lightweight LiDAR to Decouple Robot-Camera Geometry",
+    "authors": [
+      "Yuyang Chen",
+      "Dingkang Wang",
+      "Lenworth Thomas",
+      "Karthik Dantu",
+      "Sanjeev J. Koppal"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2302.14334v2.pdf",
+    "url": "http://arxiv.org/abs/2302.14334v2"
+  },
+  {
+    "id": "2210.08280v1",
+    "title": "Robot Navigation Anticipative Strategies in Deep Reinforcement Motion Planning",
+    "authors": [
+      "\u00d3scar Gil",
+      "Alberto Sanfeliu"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2210.08280v1.pdf",
+    "url": "http://arxiv.org/abs/2210.08280v1"
+  },
+  {
+    "id": "1909.04768v1",
+    "title": "Human-robot Collaborative Navigation Search using Social Reward Sources",
+    "authors": [
+      "Marc Dalmasso",
+      "Ana\u00eds Garrell",
+      "Pablo Jim\u00e9nez",
+      "Alberto Sanfeliu"
+    ],
+    "year": 2019,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1909.04768v1.pdf",
+    "url": "http://arxiv.org/abs/1909.04768v1"
+  },
+  {
+    "id": "2201.02192v1",
+    "title": "A wearable sensor vest for social humanoid robots with GPGPU, IoT, and modular software architecture",
+    "authors": [
+      "Mohsen Jafarzadeh",
+      "Stephen Brooks",
+      "Shimeng Yu",
+      "Balakrishnan Prabhakaran",
+      "Yonas Tadesse"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2201.02192v1.pdf",
+    "url": "http://arxiv.org/abs/2201.02192v1"
+  },
+  {
+    "id": "1910.11612v3",
+    "title": "DQ Robotics: a Library for Robot Modeling and Control",
+    "authors": [
+      "Bruno Vilhena Adorno",
+      "Murilo Marques Marinho"
+    ],
+    "year": 2019,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1910.11612v3.pdf",
+    "url": "http://arxiv.org/abs/1910.11612v3"
+  },
+  {
+    "id": "2402.18380v1",
+    "title": "UKF-Based Sensor Fusion for Joint-Torque Sensorless Humanoid Robots",
+    "authors": [
+      "Ines Sorrentino",
+      "Giulio Romualdi",
+      "Daniele Pucci"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2402.18380v1.pdf",
+    "url": "http://arxiv.org/abs/2402.18380v1"
+  },
+  {
+    "id": "2403.16875v1",
+    "title": "TAIL: A Terrain-Aware Multi-Modal SLAM Dataset for Robot Locomotion in Deformable Granular Environments",
+    "authors": [
+      "Chen Yao",
+      "Yangtao Ge",
+      "Guowei Shi",
+      "Zirui Wang",
+      "Ningbo Yang",
+      "Zheng Zhu",
+      "Hexiang Wei",
+      "Yuntian Zhao",
+      "Jing Wu",
+      "Zhenzhong Jia"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2403.16875v1.pdf",
+    "url": "http://arxiv.org/abs/2403.16875v1"
+  },
+  {
+    "id": "2110.06541v2",
+    "title": "Collaborative Radio SLAM for Multiple Robots based on WiFi Fingerprint Similarity",
+    "authors": [
+      "Ran Liu",
+      "Zhenghong Qin",
+      "Hua Zhang",
+      "Billy Pik Lik Lau",
+      "Khairuldanial Ismail",
+      "Achala Athukorala",
+      "Chau Yuen",
+      "Yong Liang Guan",
+      "U-Xuan Tan"
+    ],
+    "year": 2021,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2110.06541v2.pdf",
+    "url": "http://arxiv.org/abs/2110.06541v2"
+  },
+  {
+    "id": "2004.00689v1",
+    "title": "Robots in the Danger Zone: Exploring Public Perception through Engagement",
+    "authors": [
+      "David A. Robb",
+      "Muneeb I. Ahmad",
+      "Carlo Tiseo",
+      "Simona Aracri",
+      "Alistair C. McConnell",
+      "Vincent Page",
+      "Christian Dondrup",
+      "Francisco J. Chiyah Garcia",
+      "Hai-Nguyen Nguyen",
+      "\u00c8ric Pairet",
+      "Paola Ard\u00f3n Ram\u00edrez",
+      "Tushar Semwal",
+      "Hazel M. Taylor",
+      "Lindsay J. Wilson",
+      "David Lane",
+      "Helen Hastie",
+      "Katrin Lohan"
+    ],
+    "year": 2020,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2004.00689v1.pdf",
+    "url": "http://arxiv.org/abs/2004.00689v1"
+  },
+  {
+    "id": "2210.08952v1",
+    "title": "Predicting Dense and Context-aware Cost Maps for Semantic Robot Navigation",
+    "authors": [
+      "Yash Goel",
+      "Narunas Vaskevicius",
+      "Luigi Palmieri",
+      "Nived Chebrolu",
+      "Cyrill Stachniss"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2210.08952v1.pdf",
+    "url": "http://arxiv.org/abs/2210.08952v1"
+  },
+  {
+    "id": "2210.05894v3",
+    "title": "Human-Aware Physical Human-Robot Collaborative Transportation and Manipulation with Multiple Aerial Robots",
+    "authors": [
+      "Guanrui Li",
+      "Xinyang Liu",
+      "Giuseppe Loianno"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2210.05894v3.pdf",
+    "url": "http://arxiv.org/abs/2210.05894v3"
+  },
+  {
+    "id": "2010.12639v1",
+    "title": "The RobotSlang Benchmark: Dialog-guided Robot Localization and Navigation",
+    "authors": [
+      "Shurjo Banerjee",
+      "Jesse Thomason",
+      "Jason J. Corso"
+    ],
+    "year": 2020,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2010.12639v1.pdf",
+    "url": "http://arxiv.org/abs/2010.12639v1"
+  },
+  {
+    "id": "2411.05337v1",
+    "title": "Development of an indoor localization and navigation system based on monocular SLAM for mobile robots",
+    "authors": [
+      "Thanh Nguyen Canh",
+      "Duc Manh Do",
+      "Xiem HoangVan"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2411.05337v1.pdf",
+    "url": "http://arxiv.org/abs/2411.05337v1"
+  },
+  {
+    "id": "2403.05306v1",
+    "title": "A Collaborative Robot-Assisted Manufacturing Assembly Process",
+    "authors": [
+      "Miguel Neves",
+      "Laura Duarte",
+      "Pedro Neto"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2403.05306v1.pdf",
+    "url": "http://arxiv.org/abs/2403.05306v1"
+  },
+  {
+    "id": "1804.04817v1",
+    "title": "Offline and Online calibration of Mobile Robot and SLAM Device for Navigation",
+    "authors": [
+      "Ryoichi Ishikawa",
+      "Takeshi Oishi",
+      "Katsushi Ikeuchi"
+    ],
+    "year": 2018,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1804.04817v1.pdf",
+    "url": "http://arxiv.org/abs/1804.04817v1"
+  },
+  {
+    "id": "2403.01542v1",
+    "title": "Human Robot Pacing Mismatch",
+    "authors": [
+      "Muchen Sun",
+      "Peter Trautman",
+      "Todd Murphey"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2403.01542v1.pdf",
+    "url": "http://arxiv.org/abs/2403.01542v1"
+  },
+  {
+    "id": "2306.14137v2",
+    "title": "BotanicGarden: A High-Quality Dataset for Robot Navigation in Unstructured Natural Environments",
+    "authors": [
+      "Yuanzhi Liu",
+      "Yujia Fu",
+      "Minghui Qin",
+      "Yufeng Xu",
+      "Baoxin Xu",
+      "Fengdong Chen",
+      "Bart Goossens",
+      "Poly Z. H. Sun",
+      "Hongwei Yu",
+      "Chun Liu",
+      "Long Chen",
+      "Wei Tao",
+      "Hui Zhao"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2306.14137v2.pdf",
+    "url": "http://arxiv.org/abs/2306.14137v2"
+  },
+  {
+    "id": "1808.05050v2",
+    "title": "A Comparative Study of Bug Algorithms for Robot Navigation",
+    "authors": [
+      "Kimberly McGuire",
+      "Guido de Croon",
+      "Karl Tuyls"
+    ],
+    "year": 2018,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1808.05050v2.pdf",
+    "url": "http://arxiv.org/abs/1808.05050v2"
+  },
+  {
+    "id": "2010.07221v2",
+    "title": "Affect-Driven Modelling of Robot Personality for Collaborative Human-Robot Interactions",
+    "authors": [
+      "Nikhil Churamani",
+      "Pablo Barros",
+      "Hatice Gunes",
+      "Stefan Wermter"
+    ],
+    "year": 2020,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2010.07221v2.pdf",
+    "url": "http://arxiv.org/abs/2010.07221v2"
+  },
+  {
+    "id": "1309.2086v1",
+    "title": "High-level robot programming based on CAD: dealing with unpredictable environments",
+    "authors": [
+      "Pedro Neto",
+      "Nuno Mendes",
+      "Ricardo Ara\u00fajo",
+      "J. Norberto Pires",
+      "A. Paulo Moreira"
+    ],
+    "year": 2013,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1309.2086v1.pdf",
+    "url": "http://arxiv.org/abs/1309.2086v1"
+  },
+  {
+    "id": "2202.03314v2",
+    "title": "A Robot Web for Distributed Many-Device Localisation",
+    "authors": [
+      "Riku Murai",
+      "Joseph Ortiz",
+      "Sajad Saeedi",
+      "Paul H. J. Kelly",
+      "Andrew J. Davison"
+    ],
+    "year": 2022,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2202.03314v2.pdf",
+    "url": "http://arxiv.org/abs/2202.03314v2"
+  },
+  {
+    "id": "2409.16573v3",
+    "title": "Task-driven SLAM Benchmarking For Robot Navigation",
+    "authors": [
+      "Yanwei Du",
+      "Shiyu Feng",
+      "Carlton G. Cort",
+      "Patricio A. Vela"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2409.16573v3.pdf",
+    "url": "http://arxiv.org/abs/2409.16573v3"
+  },
+  {
+    "id": "2302.06554v2",
+    "title": "Improving robot navigation in crowded environments using intrinsic rewards",
+    "authors": [
+      "Diego Martinez-Baselga",
+      "Luis Riazuelo",
+      "Luis Montano"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2302.06554v2.pdf",
+    "url": "http://arxiv.org/abs/2302.06554v2"
+  },
+  {
+    "id": "1709.09741v1",
+    "title": "WHY: Natural Explanations from a Robot Navigator",
+    "authors": [
+      "Raj Korpan",
+      "Susan L. Epstein",
+      "Anoop Aroor",
+      "Gil Dekel"
+    ],
+    "year": 2017,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/1709.09741v1.pdf",
+    "url": "http://arxiv.org/abs/1709.09741v1"
+  },
+  {
+    "id": "2508.11485v2",
+    "title": "i2Nav-Robot: A Large-Scale Indoor-Outdoor Robot Dataset for Multi-Sensor Fusion Navigation and Mapping",
+    "authors": [
+      "Hailiang Tang",
+      "Tisheng Zhang",
+      "Liqiang Wang",
+      "Xin Ding",
+      "Man Yuan",
+      "Zhiyu Xiang",
+      "Jujin Chen",
+      "Yuhan Bian",
+      "Shuangyan Liu",
+      "Yuqing Wang",
+      "Guan Wang",
+      "Xiaoji Niu"
+    ],
+    "year": 2025,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2508.11485v2.pdf",
+    "url": "http://arxiv.org/abs/2508.11485v2"
+  },
+  {
+    "id": "2411.03494v2",
+    "title": "An Open-source Sim2Real Approach for Sensor-independent Robot Navigation in a Grid",
+    "authors": [
+      "Murad Mehrab Abrar",
+      "Souryadeep Mondal",
+      "Michelle Hickner"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2411.03494v2.pdf",
+    "url": "http://arxiv.org/abs/2411.03494v2"
+  },
+  {
+    "id": "2107.04001v2",
+    "title": "Incorporating Gaze into Social Navigation",
+    "authors": [
+      "Justin Hart",
+      "Reuth Mirsky",
+      "Xuesu Xiao",
+      "Peter Stone"
+    ],
+    "year": 2021,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2107.04001v2.pdf",
+    "url": "http://arxiv.org/abs/2107.04001v2"
+  },
+  {
+    "id": "2309.15045v1",
+    "title": "Modeling Evacuee Behavior for Robot-Guided Emergency Evacuation",
+    "authors": [
+      "Mollik Nayyar",
+      "Alan Wagner"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2309.15045v1.pdf",
+    "url": "http://arxiv.org/abs/2309.15045v1"
+  },
+  {
+    "id": "2007.14486v4",
+    "title": "A Lifelong Learning Approach to Mobile Robot Navigation",
+    "authors": [
+      "Bo Liu",
+      "Xuesu Xiao",
+      "Peter Stone"
+    ],
+    "year": 2020,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2007.14486v4.pdf",
+    "url": "http://arxiv.org/abs/2007.14486v4"
+  },
+  {
+    "id": "2306.04570v1",
+    "title": "Towards Decentralized Heterogeneous Multi-Robot SLAM and Target Tracking",
+    "authors": [
+      "Ofer Dagan",
+      "Tycho L. Cinquini",
+      "Luke Morrissey",
+      "Kristen Such",
+      "Nisar R. Ahmed",
+      "Christoffer Heckman"
+    ],
+    "year": 2023,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2306.04570v1.pdf",
+    "url": "http://arxiv.org/abs/2306.04570v1"
+  },
+  {
+    "id": "2401.17083v4",
+    "title": "Online Robot Navigation and Manipulation with Distilled Vision-Language Models",
+    "authors": [
+      "Kangcheng Liu"
+    ],
+    "year": 2024,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2401.17083v4.pdf",
+    "url": "http://arxiv.org/abs/2401.17083v4"
+  },
+  {
+    "id": "2109.07245v2",
+    "title": "Navigation-Oriented Scene Understanding for Robotic Autonomy: Learning to Segment Driveability in Egocentric Images",
+    "authors": [
+      "Galadrielle Humblot-Renaux",
+      "Letizia Marchegiani",
+      "Thomas B. Moeslund",
+      "Rikke Gade"
+    ],
+    "year": 2021,
+    "category": "robotics",
+    "pdf_path": "data/raw/robotics/2109.07245v2.pdf",
+    "url": "http://arxiv.org/abs/2109.07245v2"
+  },
+  {
+    "id": "2506.06962v3",
+    "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+    "authors": [
+      "Jingyuan Qi",
+      "Zhiyang Xu",
+      "Qifan Wang",
+      "Lifu Huang"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2506.06962v3.pdf",
+    "url": "http://arxiv.org/abs/2506.06962v3"
+  },
+  {
+    "id": "2504.13684v1",
+    "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+    "authors": [
+      " Xiangrong",
+      " Zhu",
+      "Yuan Xu",
+      "Tianjian Liu",
+      "Jingwei Sun",
+      "Yu Zhang",
+      "Xin Tong"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2504.13684v1.pdf",
+    "url": "http://arxiv.org/abs/2504.13684v1"
+  },
+  {
+    "id": "2504.17204v1",
+    "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+    "authors": [
+      "Chitralekha Gupta",
+      "Hanjun Wu",
+      "Praveen Sasikumar",
+      "Shreyas Sridhar",
+      "Priambudi Bagaskara",
+      "Suranga Nanayakkara"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2504.17204v1.pdf",
+    "url": "http://arxiv.org/abs/2504.17204v1"
+  },
+  {
+    "id": "2504.14689v1",
+    "title": "Designing AI Systems that Augment Human Performed vs. Demonstrated Critical Thinking",
+    "authors": [
+      "Katelyn Xiaoying Mei",
+      "Nic Weber"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2504.14689v1.pdf",
+    "url": "http://arxiv.org/abs/2504.14689v1"
+  },
+  {
+    "id": "2411.18583v1",
+    "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+    "authors": [
+      "Nurshat Fateh Ali",
+      "Md. Mahdi Mohtasim",
+      "Shakil Mosharrof",
+      "T. Gopi Krishna"
+    ],
+    "year": 2024,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2411.18583v1.pdf",
+    "url": "http://arxiv.org/abs/2411.18583v1"
+  },
+  {
+    "id": "2605.12335v1",
+    "title": "EHR-RAGp: Retrieval-Augmented Prototype-Guided Foundation Model for Electronic Health Records",
+    "authors": [
+      "Saeed Shurrab",
+      "Mariam Al-Omari",
+      "Dana El Samad",
+      "Farah E. Shamout"
+    ],
+    "year": 2026,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2605.12335v1.pdf",
+    "url": "http://arxiv.org/abs/2605.12335v1"
+  },
+  {
+    "id": "2402.12317v2",
+    "title": "EVOR: Evolving Retrieval for Code Generation",
+    "authors": [
+      "Hongjin Su",
+      "Shuyang Jiang",
+      "Yuhang Lai",
+      "Haoyuan Wu",
+      "Boao Shi",
+      "Che Liu",
+      "Qian Liu",
+      "Tao Yu"
+    ],
+    "year": 2024,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2402.12317v2.pdf",
+    "url": "http://arxiv.org/abs/2402.12317v2"
+  },
+  {
+    "id": "2502.00306v2",
+    "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+    "authors": [
+      "Ali Naseh",
+      "Yuefeng Peng",
+      "Anshuman Suri",
+      "Harsh Chaudhari",
+      "Alina Oprea",
+      "Amir Houmansadr"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2502.00306v2.pdf",
+    "url": "http://arxiv.org/abs/2502.00306v2"
+  },
+  {
+    "id": "2309.15217v2",
+    "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+    "authors": [
+      "Shahul Es",
+      "Jithin James",
+      "Luis Espinosa-Anke",
+      "Steven Schockaert"
+    ],
+    "year": 2023,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2309.15217v2.pdf",
+    "url": "http://arxiv.org/abs/2309.15217v2"
+  },
+  {
+    "id": "2507.23334v2",
+    "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+    "authors": [
+      "Daeyong Kwon",
+      "SeungHeon Doh",
+      "Juhan Nam"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2507.23334v2.pdf",
+    "url": "http://arxiv.org/abs/2507.23334v2"
+  },
+  {
+    "id": "2601.05264v1",
+    "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+    "authors": [
+      "Dean Wampler",
+      "Dave Nielson",
+      "Alireza Seddighi"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2601.05264v1.pdf",
+    "url": "http://arxiv.org/abs/2601.05264v1"
+  },
+  {
+    "id": "2510.22344v1",
+    "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+    "authors": [
+      "Mohammad Aghajani Asl",
+      "Majid Asgari-Bidhendi",
+      "Behrooz Minaei-Bidgoli"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2510.22344v1.pdf",
+    "url": "http://arxiv.org/abs/2510.22344v1"
+  },
+  {
+    "id": "2601.11863v1",
+    "title": "Utilizing Metadata for Better Retrieval-Augmented Generation",
+    "authors": [
+      "Raquib Bin Yousuf",
+      "Shengzhe Xu",
+      "Mandar Sharma",
+      "Andrew Neeser",
+      "Chris Latimer",
+      "Naren Ramakrishnan"
+    ],
+    "year": 2026,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2601.11863v1.pdf",
+    "url": "http://arxiv.org/abs/2601.11863v1"
+  },
+  {
+    "id": "1811.08772v1",
+    "title": "Overcoming low-utility facets for complex answer retrieval",
+    "authors": [
+      "Sean MacAvaney",
+      "Andrew Yates",
+      "Arman Cohan",
+      "Luca Soldaini",
+      "Kai Hui",
+      "Nazli Goharian",
+      "Ophir Frieder"
+    ],
+    "year": 2018,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/1811.08772v1.pdf",
+    "url": "http://arxiv.org/abs/1811.08772v1"
+  },
+  {
+    "id": "2310.11511v1",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "authors": [
+      "Akari Asai",
+      "Zeqiu Wu",
+      "Yizhong Wang",
+      "Avirup Sil",
+      "Hannaneh Hajishirzi"
+    ],
+    "year": 2023,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2310.11511v1.pdf",
+    "url": "http://arxiv.org/abs/2310.11511v1"
+  },
+  {
+    "id": "2512.24268v1",
+    "title": "RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented Generation",
+    "authors": [
+      "Pankayaraj Pathmanathan",
+      "Michael-Andrei Panaitescu-Liess",
+      "Cho-Yu Jason Chiang",
+      "Furong Huang"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2512.24268v1.pdf",
+    "url": "http://arxiv.org/abs/2512.24268v1"
+  },
+  {
+    "id": "2504.05181v2",
+    "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+    "authors": [
+      "Kidist Amde Mekonnen",
+      "Yubao Tang",
+      "Maarten de Rijke"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2504.05181v2.pdf",
+    "url": "http://arxiv.org/abs/2504.05181v2"
+  },
+  {
+    "id": "2602.07525v1",
+    "title": "IGMiRAG: Intuition-Guided Retrieval-Augmented Generation with Adaptive Mining of In-Depth Memory",
+    "authors": [
+      "Xingliang Hou",
+      "Yuyan Liu",
+      "Qi Sun",
+      "haoxiu wang",
+      "Hao Hu",
+      "Shaoyi Du",
+      "Zhiqiang Tian"
+    ],
+    "year": 2026,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2602.07525v1.pdf",
+    "url": "http://arxiv.org/abs/2602.07525v1"
+  },
+  {
+    "id": "2504.19754v1",
+    "title": "Reconstructing Context: Evaluating Advanced Chunking Strategies for Retrieval-Augmented Generation",
+    "authors": [
+      "Carlo Merola",
+      "Jaspinder Singh"
+    ],
+    "year": 2025,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2504.19754v1.pdf",
+    "url": "http://arxiv.org/abs/2504.19754v1"
+  },
+  {
+    "id": "2411.00744v2",
+    "title": "CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG",
+    "authors": [
+      "Ziting Wang",
+      "Haitao Yuan",
+      "Wei Dong",
+      "Gao Cong",
+      "Feifei Li"
+    ],
+    "year": 2024,
+    "category": "rag",
+    "pdf_path": "data/raw/rag/2411.00744v2.pdf",
+    "url": "http://arxiv.org/abs/2411.00744v2"
+  },
+  {
+    "id": "2606.05868v1",
+    "title": "YouZhi: Towards High-Concurrency Financial LLMs via Adaptive GQA-to-MLA Transition",
+    "authors": [
+      " PSBC LLM Team",
+      " Huawei LLM Team",
+      "Ruihan Long",
+      "Junjie Wu",
+      "Tianan Zhang",
+      "Duo Zhang",
+      "Yaozong Wu",
+      "Jinbin Fu",
+      "Chang Liu",
+      "Zhentao Tang",
+      "Wenshuang Yang",
+      "Xin Wang",
+      "Zhihao Song",
+      "Ning Huang",
+      "Wenjing Xu",
+      "Shuai Zong",
+      "Shupei Sun",
+      "Sen Wang",
+      "Jing Hu",
+      "Bin Wang",
+      "Xinyu Wang",
+      "Junkui Ju",
+      "Zequn Ding",
+      "Jie Ran",
+      "Man Luo",
+      "Shixiong Kai",
+      "Linkai Hou",
+      "Kaichao Liang",
+      "Hu Zhao",
+      "Yang Zhao",
+      "Shucheng Lin",
+      "Wei Yu",
+      "Chenghan Jiang",
+      "Jingjing Ding",
+      "Jiahui Zhang",
+      "Tian Jin",
+      "Yuhang Zhang",
+      "Dong Guo",
+      "Wei Sun",
+      "Jun Xie",
+      "Jianwei Li",
+      "Lei Cao",
+      "Pei Li",
+      "Jiabin Li",
+      "Jia Yuan",
+      "Rui Yuan",
+      "Jing Zhu",
+      "Mingxuan Yuan",
+      "Zhangcheng Lv",
+      "Xin Jiang",
+      "Xiuhong Fei",
+      "Xiaozhe Ren",
+      "Yulong Li",
+      "Zhipeng Zhang",
+      "Hang Wang",
+      "Zhaohui Xu",
+      "Rui Zhao",
+      "Yibo He",
+      "Xinzhuang Niu"
+    ],
+    "year": 2026,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2606.05868v1.pdf",
+    "url": "http://arxiv.org/abs/2606.05868v1"
+  },
+  {
+    "id": "2509.03518v1",
+    "title": "Can LLMs Lie? Investigation beyond Hallucination",
+    "authors": [
+      "Haoran Huan",
+      "Mihir Prabhudesai",
+      "Mengning Wu",
+      "Shantanu Jaiswal",
+      "Deepak Pathak"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2509.03518v1.pdf",
+    "url": "http://arxiv.org/abs/2509.03518v1"
+  },
+  {
+    "id": "2306.13063v2",
+    "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "authors": [
+      "Miao Xiong",
+      "Zhiyuan Hu",
+      "Xinyang Lu",
+      "Yifei Li",
+      "Jie Fu",
+      "Junxian He",
+      "Bryan Hooi"
+    ],
+    "year": 2023,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2306.13063v2.pdf",
+    "url": "http://arxiv.org/abs/2306.13063v2"
+  },
+  {
+    "id": "2306.05212v1",
+    "title": "RETA-LLM: A Retrieval-Augmented Large Language Model Toolkit",
+    "authors": [
+      "Jiongnan Liu",
+      "Jiajie Jin",
+      "Zihan Wang",
+      "Jiehan Cheng",
+      "Zhicheng Dou",
+      "Ji-Rong Wen"
+    ],
+    "year": 2023,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2306.05212v1.pdf",
+    "url": "http://arxiv.org/abs/2306.05212v1"
+  },
+  {
+    "id": "2605.27016v1",
+    "title": "Evaluating the Relevance of Uncertainty Estimators for LLM Hallucination",
+    "authors": [
+      "Yedidia Agnimo",
+      "Anna Korba",
+      "Annabelle Blangero",
+      "Nicolas Chesneau",
+      "Karteek Alahari"
+    ],
+    "year": 2026,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2605.27016v1.pdf",
+    "url": "http://arxiv.org/abs/2605.27016v1"
+  },
+  {
+    "id": "2407.07093v1",
+    "title": "FBI-LLM: Scaling Up Fully Binarized LLMs from Scratch via Autoregressive Distillation",
+    "authors": [
+      "Liqun Ma",
+      "Mingjie Sun",
+      "Zhiqiang Shen"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2407.07093v1.pdf",
+    "url": "http://arxiv.org/abs/2407.07093v1"
+  },
+  {
+    "id": "2406.01698v3",
+    "title": "Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models",
+    "authors": [
+      "Abhimanyu Bambhaniya",
+      "Ritik Raj",
+      "Geonhwa Jeong",
+      "Souvik Kundu",
+      "Sudarshan Srinivasan",
+      "Suvinay Subramanian",
+      "Midhilesh Elavazhagan",
+      "Madhu Kumar",
+      "Tushar Krishna"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2406.01698v3.pdf",
+    "url": "http://arxiv.org/abs/2406.01698v3"
+  },
+  {
+    "id": "2408.13006v2",
+    "title": "Systematic Evaluation of LLM-as-a-Judge in LLM Alignment Tasks: Explainable Metrics and Diverse Prompt Templates",
+    "authors": [
+      "Hui Wei",
+      "Shenghua He",
+      "Tian Xia",
+      "Fei Liu",
+      "Andy Wong",
+      "Jingyang Lin",
+      "Mei Han"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2408.13006v2.pdf",
+    "url": "http://arxiv.org/abs/2408.13006v2"
+  },
+  {
+    "id": "2507.22171v3",
+    "title": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+    "authors": [
+      "Zheng Zhang",
+      "Peilin Zhao",
+      "Deheng Ye",
+      "Hao Wang"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2507.22171v3.pdf",
+    "url": "http://arxiv.org/abs/2507.22171v3"
+  },
+  {
+    "id": "2601.17768v2",
+    "title": "LLM-42: Enabling Determinism in LLM Inference with Verified Speculation",
+    "authors": [
+      "Raja Gond",
+      "Aditya K Kamath",
+      "Ramachandran Ramjee",
+      "Ashish Panwar"
+    ],
+    "year": 2026,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2601.17768v2.pdf",
+    "url": "http://arxiv.org/abs/2601.17768v2"
+  },
+  {
+    "id": "2606.06673v1",
+    "title": "Uncertainty-Aware LLM-Guided Policy Shaping for Sparse-Reward Reinforcement Learning",
+    "authors": [
+      "Ujjwal Bhatta",
+      "Utsabi Dangol",
+      "Sumaly Bajracharya",
+      "Rodrigue Rizk",
+      "KC Santosh"
+    ],
+    "year": 2026,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2606.06673v1.pdf",
+    "url": "http://arxiv.org/abs/2606.06673v1"
+  },
+  {
+    "id": "2511.07364v1",
+    "title": "Self-Evaluating LLMs for Multi-Step Tasks: Stepwise Confidence Estimation for Failure Detection",
+    "authors": [
+      "Vaibhav Mavi",
+      "Shubh Jaroria",
+      "Weiqi Sun"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2511.07364v1.pdf",
+    "url": "http://arxiv.org/abs/2511.07364v1"
+  },
+  {
+    "id": "2401.07324v3",
+    "title": "Small LLMs Are Weak Tool Learners: A Multi-LLM Agent",
+    "authors": [
+      "Weizhou Shen",
+      "Chenliang Li",
+      "Hongzhan Chen",
+      "Ming Yan",
+      "Xiaojun Quan",
+      "Hehong Chen",
+      "Ji Zhang",
+      "Fei Huang"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2401.07324v3.pdf",
+    "url": "http://arxiv.org/abs/2401.07324v3"
+  },
+  {
+    "id": "2505.18541v1",
+    "title": "RoleRAG: Enhancing LLM Role-Playing via Graph Guided Retrieval",
+    "authors": [
+      "Yongjie Wang",
+      "Jonathan Leung",
+      "Zhiqi Shen"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2505.18541v1.pdf",
+    "url": "http://arxiv.org/abs/2505.18541v1"
+  },
+  {
+    "id": "2505.18458v3",
+    "title": "A Survey of LLM $\\times$ DATA",
+    "authors": [
+      "Xuanhe Zhou",
+      "Junxuan He",
+      "Wei Zhou",
+      "Haodong Chen",
+      "Zirui Tang",
+      "Haoyu Zhao",
+      "Xin Tong",
+      "Guoliang Li",
+      "Youmin Chen",
+      "Jun Zhou",
+      "Zhaojun Sun",
+      "Binyuan Hui",
+      "Shuo Wang",
+      "Conghui He",
+      "Zhiyuan Liu",
+      "Jingren Zhou",
+      "Fan Wu"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2505.18458v3.pdf",
+    "url": "http://arxiv.org/abs/2505.18458v3"
+  },
+  {
+    "id": "2402.10517v4",
+    "title": "Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs",
+    "authors": [
+      "Yeonhong Park",
+      "Jake Hyun",
+      "SangLyul Cho",
+      "Bonggeun Sim",
+      "Jae W. Lee"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2402.10517v4.pdf",
+    "url": "http://arxiv.org/abs/2402.10517v4"
+  },
+  {
+    "id": "2406.07545v1",
+    "title": "Open-LLM-Leaderboard: From Multi-choice to Open-style Questions for LLMs Evaluation, Benchmark, and Arena",
+    "authors": [
+      "Aidar Myrzakhan",
+      "Sondos Mahmoud Bsharat",
+      "Zhiqiang Shen"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2406.07545v1.pdf",
+    "url": "http://arxiv.org/abs/2406.07545v1"
+  },
+  {
+    "id": "2506.09886v2",
+    "title": "Probabilistic distances-based hallucination detection in LLMs with RAG",
+    "authors": [
+      "Rodion Oblovatny",
+      "Alexandra Kuleshova",
+      "Konstantin Polev",
+      "Alexey Zaytsev"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2506.09886v2.pdf",
+    "url": "http://arxiv.org/abs/2506.09886v2"
+  },
+  {
+    "id": "2406.06575v1",
+    "title": "Ask-EDA: A Design Assistant Empowered by LLM, Hybrid RAG and Abbreviation De-hallucination",
+    "authors": [
+      "Luyao Shi",
+      "Michael Kazda",
+      "Bradley Sears",
+      "Nick Shropshire",
+      "Ruchir Puri"
+    ],
+    "year": 2024,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2406.06575v1.pdf",
+    "url": "http://arxiv.org/abs/2406.06575v1"
+  },
+  {
+    "id": "2502.12769v4",
+    "title": "How Much Do LLMs Hallucinate across Languages? On Realistic Multilingual Estimation of LLM Hallucination",
+    "authors": [
+      "Saad Obaid ul Islam",
+      "Anne Lauscher",
+      "Goran Glava\u0161"
+    ],
+    "year": 2025,
+    "category": "hallucination",
+    "pdf_path": "data/raw/hallucination/2502.12769v4.pdf",
+    "url": "http://arxiv.org/abs/2502.12769v4"
+  },
+  {
+    "id": "1912.02145v1",
+    "title": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+    "authors": [
+      "Shayne Longpre",
+      "Yi Lu",
+      "Zhucheng Tu",
+      "Chris DuBois"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1912.02145v1.pdf",
+    "url": "http://arxiv.org/abs/1912.02145v1"
+  },
+  {
+    "id": "2108.12898v1",
+    "title": "Generating Answer Candidates for Quizzes and Answer-Aware Question Generators",
+    "authors": [
+      "Kristiyan Vachev",
+      "Momchil Hardalov",
+      "Georgi Karadzhov",
+      "Georgi Georgiev",
+      "Ivan Koychev",
+      "Preslav Nakov"
+    ],
+    "year": 2021,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2108.12898v1.pdf",
+    "url": "http://arxiv.org/abs/2108.12898v1"
+  },
+  {
+    "id": "1911.11403v1",
+    "title": "SemEval-2015 Task 3: Answer Selection in Community Question Answering",
+    "authors": [
+      "Preslav Nakov",
+      "Llu\u00eds M\u00e0rquez",
+      "Walid Magdy",
+      "Alessandro Moschitti",
+      "James Glass",
+      "Bilal Randeree"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1911.11403v1.pdf",
+    "url": "http://arxiv.org/abs/1911.11403v1"
+  },
+  {
+    "id": "1803.07724v1",
+    "title": "Attention on Attention: Architectures for Visual Question Answering (VQA)",
+    "authors": [
+      "Jasdeep Singh",
+      "Vincent Ying",
+      "Alex Nutkiewicz"
+    ],
+    "year": 2018,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1803.07724v1.pdf",
+    "url": "http://arxiv.org/abs/1803.07724v1"
+  },
+  {
+    "id": "2105.14013v1",
+    "title": "Feature extraction and evaluation for BioMedical Question Answering",
+    "authors": [
+      "Ankit Shah",
+      "Srishti Singh",
+      "Shih-Yen Tao"
+    ],
+    "year": 2021,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2105.14013v1.pdf",
+    "url": "http://arxiv.org/abs/2105.14013v1"
+  },
+  {
+    "id": "2011.14743v1",
+    "title": "IPPOG : Bridging the gap between science education at school and modern scientific research",
+    "authors": [
+      "Barbora Bruant Gulejova"
+    ],
+    "year": 2020,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2011.14743v1.pdf",
+    "url": "http://arxiv.org/abs/2011.14743v1"
+  },
+  {
+    "id": "0107006v1",
+    "title": "Looking Under the Hood : Tools for Diagnosing your Question Answering Engine",
+    "authors": [
+      "Eric Breck",
+      "Marc Light",
+      "Gideon S. Mann",
+      "Ellen Riloff",
+      "Brianne Brown Pranav Anand",
+      "Mats Rooth",
+      "Michael Thelen"
+    ],
+    "year": 2001,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/0107006v1.pdf",
+    "url": "http://arxiv.org/abs/cs/0107006v1"
+  },
+  {
+    "id": "2407.04255v1",
+    "title": "Second Place Solution of WSDM2023 Toloka Visual Question Answering Challenge",
+    "authors": [
+      "Xiangyu Wu",
+      "Zhouyang Chi",
+      "Yang Yang",
+      "Jianfeng Lu"
+    ],
+    "year": 2024,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2407.04255v1.pdf",
+    "url": "http://arxiv.org/abs/2407.04255v1"
+  },
+  {
+    "id": "1601.03541v2",
+    "title": "Question Answering on Linked Data: Challenges and Future Directions",
+    "authors": [
+      "Saeedeh Shekarpour",
+      "Denis Lukovnikov",
+      "Ashwini Jaya Kumar",
+      "Kemele Endris",
+      "Kuldeep Singh",
+      "Harsh Thakkar",
+      "Christoph Lange"
+    ],
+    "year": 2016,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1601.03541v2.pdf",
+    "url": "http://arxiv.org/abs/1601.03541v2"
+  },
+  {
+    "id": "1912.00730v1",
+    "title": "SemEval-2017 Task 3: Community Question Answering",
+    "authors": [
+      "Preslav Nakov",
+      "Doris Hoogeveen",
+      "Llu\u00eds M\u00e0rquez",
+      "Alessandro Moschitti",
+      "Hamdy Mubarak",
+      "Timothy Baldwin",
+      "Karin Verspoor"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1912.00730v1.pdf",
+    "url": "http://arxiv.org/abs/1912.00730v1"
+  },
+  {
+    "id": "1909.09192v1",
+    "title": "Learning Sparse Mixture of Experts for Visual Question Answering",
+    "authors": [
+      "Vardaan Pahuja",
+      "Jie Fu",
+      "Christopher J. Pal"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1909.09192v1.pdf",
+    "url": "http://arxiv.org/abs/1909.09192v1"
+  },
+  {
+    "id": "2109.15120v1",
+    "title": "SUper Team at SemEval-2016 Task 3: Building a feature-rich system for community question answering",
+    "authors": [
+      "Tsvetomila Mihaylova",
+      "Pepa Gencheva",
+      "Martin Boyanov",
+      "Ivana Yovcheva",
+      "Todor Mihaylov",
+      "Momchil Hardalov",
+      "Yasen Kiprov",
+      "Daniel Balchev",
+      "Ivan Koychev",
+      "Preslav Nakov",
+      "Ivelina Nikolova",
+      "Galia Angelova"
+    ],
+    "year": 2021,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2109.15120v1.pdf",
+    "url": "http://arxiv.org/abs/2109.15120v1"
+  },
+  {
+    "id": "1911.08743v1",
+    "title": "SemanticZ at SemEval-2016 Task 3: Ranking Relevant Answers in Community Question Answering Using Semantic Similarity Based on Fine-tuned Word Embeddings",
+    "authors": [
+      "Todor Mihaylov",
+      "Preslav Nakov"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1911.08743v1.pdf",
+    "url": "http://arxiv.org/abs/1911.08743v1"
+  },
+  {
+    "id": "1912.01972v1",
+    "title": "SemEval-2016 Task 3: Community Question Answering",
+    "authors": [
+      "Preslav Nakov",
+      "Llu\u00eds M\u00e0rquez",
+      "Alessandro Moschitti",
+      "Walid Magdy",
+      "Hamdy Mubarak",
+      "Abed Alhakim Freihat",
+      "James Glass",
+      "Bilal Randeree"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1912.01972v1.pdf",
+    "url": "http://arxiv.org/abs/1912.01972v1"
+  },
+  {
+    "id": "1608.04185v3",
+    "title": "Learning to Rank Questions for Community Question Answering with Ranking SVM",
+    "authors": [
+      "Minh-Tien Nguyen",
+      "Viet-Anh Phan",
+      "Truong-Son Nguyen",
+      "Minh-Le Nguyen"
+    ],
+    "year": 2016,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1608.04185v3.pdf",
+    "url": "http://arxiv.org/abs/1608.04185v3"
+  },
+  {
+    "id": "1906.01727v1",
+    "title": "SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums",
+    "authors": [
+      "Tsvetomila Mihaylova",
+      "Georgi Karadjov",
+      "Pepa Atanasova",
+      "Ramy Baly",
+      "Mitra Mohtarami",
+      "Preslav Nakov"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1906.01727v1.pdf",
+    "url": "http://arxiv.org/abs/1906.01727v1"
+  },
+  {
+    "id": "1912.02998v1",
+    "title": "Machine Translation Evaluation Meets Community Question Answering",
+    "authors": [
+      "Francisco Guzm\u00e1n",
+      "Llu\u00eds M\u00e0rquez",
+      "Preslav Nakov"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1912.02998v1.pdf",
+    "url": "http://arxiv.org/abs/1912.02998v1"
+  },
+  {
+    "id": "1911.08755v1",
+    "title": "Global Thread-Level Inference for Comment Classification in Community Question Answering",
+    "authors": [
+      "Shafiq Joty",
+      "Alberto Barr\u00f3n-Cede\u00f1o",
+      "Giovanni Da San Martino",
+      "Simone Filice",
+      "Llu\u00eds M\u00e0rquez",
+      "Alessandro Moschitti",
+      "Preslav Nakov"
+    ],
+    "year": 2019,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1911.08755v1.pdf",
+    "url": "http://arxiv.org/abs/1911.08755v1"
+  },
+  {
+    "id": "2305.14882v2",
+    "title": "Dynamic Clue Bottlenecks: Towards Interpretable-by-Design Visual Question Answering",
+    "authors": [
+      "Xingyu Fu",
+      "Ben Zhou",
+      "Sihao Chen",
+      "Mark Yatskar",
+      "Dan Roth"
+    ],
+    "year": 2023,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/2305.14882v2.pdf",
+    "url": "http://arxiv.org/abs/2305.14882v2"
+  },
+  {
+    "id": "1303.7310v1",
+    "title": "Exploring the Role of Logically Related Non-Question Phrases for Answering Why-Questions",
+    "authors": [
+      "Niraj Kumar",
+      "Rashmi Gangadharaiah",
+      "Kannan Srinathan",
+      "Vasudeva Varma"
+    ],
+    "year": 2013,
+    "category": "scientific_qa",
+    "pdf_path": "data/raw/scientific_qa/1303.7310v1.pdf",
+    "url": "http://arxiv.org/abs/1303.7310v1"
+  }
+]
