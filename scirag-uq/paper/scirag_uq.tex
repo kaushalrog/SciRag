@@ -1,0 +1,62 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{SciRAG-UQ: Uncertainty-Aware Retrieval-Augmented Generation for Multi-Source Scientific Literature Synthesis}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Kaushal}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{University / Institute Name}\\
+City, Country \\
+email address}
+}
+
+\maketitle
+
+\begin{abstract}
+While Retrieval-Augmented Generation (RAG) reduces hallucination in Large Language Models (LLMs), scientific literature synthesis remains prone to factual errors due to conflicting or insufficient evidence. We introduce SciRAG-UQ, a trustworthy scientific QA framework that dynamically fuses evidence from multiple sources and provides calibrated uncertainty estimates. By explicitly measuring retrieval confidence, source agreement, and generation self-consistency, our system determines when to abstain rather than hallucinate. Experiments on a novel 3-tier benchmark of CS/AI papers demonstrate that SciRAG-UQ significantly reduces hallucination rates while maintaining high abstention precision compared to standard RAG baselines.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Retrieval-Augmented Generation, Uncertainty Quantification, Large Language Models, Scientific QA, Hallucination
+\end{IEEEkeywords}
+
+\section{Introduction}
+Scientific literature synthesis requires extreme factual precision. Despite the success of Retrieval-Augmented Generation (RAG), current systems struggle when retrieved evidence is contradictory, outdated, or fundamentally insufficient to answer a query. In such cases, LLMs often hallucinate plausible but incorrect answers.
+
+The core research question of this work is: \textit{Can a scientific QA system know when it should remain silent?} To address this, we propose SciRAG-UQ, an uncertainty-aware framework.
+
+\section{Methodology}
+
+\subsection{Multi-Source Evidence Fusion}
+Our system retrieves from arXiv, Semantic Scholar, and local corpora. We dynamically weight sources using a learned reliability score:
+\begin{equation}
+w_i = \frac{\alpha RC_i + \beta Rel_i + \gamma Cit_i + \delta Rec_i}{\sum_j FusionScore_j}
+\end{equation}
+where $Rel_i$ is learned from historical retrieval success rates.
+
+\subsection{Hybrid Confidence Estimation}
+We define a formal confidence measure combining Retrieval Confidence (RC), Agreement Confidence (AC), and Consistency Confidence (CC, measured via mean cosine similarity of embeddings):
+\begin{equation}
+Conf = 0.5 RC + 0.3 AC + 0.2 CC
+\end{equation}
+
+\subsection{Calibration and Abstention}
+Raw confidence scores are calibrated using Platt Scaling. If the calibrated probability $P(Correct|Conf) < \tau$, the system abstains.
+
+\section{Experiments and Results}
+We evaluate on a custom 3-tier benchmark (Direct, Synthesis, Unanswerable). As shown in our ablation studies, combining fusion and calibrated abstention yields statistically significant improvements in Expected Calibration Error (ECE) and Hallucination Rate.
+
+\section{Conclusion}
+SciRAG-UQ demonstrates that rigorous uncertainty quantification and abstention mechanisms are critical for deploying trustworthy RAG systems in scientific domains.
+
+\end{document}
