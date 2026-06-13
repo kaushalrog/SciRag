@@ -79,3 +79,30 @@ def run_baseline_study():
                 confidence=confidence,
                 abstained=False,
                 truly_uncertain=False
+            )
+            samples_by_level[level].append((sample, 1.0 if is_correct else 0.0))
+
+    # 5. Export Results & Summarize
+    failure_logger.export()
+    
+    logger.info("=== Baseline Study Results ===")
+    for level in ContradictionLevel:
+        level_data = samples_by_level[level]
+        if not level_data:
+            continue
+            
+        samples = [s[0] for s in level_data]
+        correctness = [s[1] for s in level_data]
+        
+        avg_conf = sum(s.confidence for s in samples) / len(samples)
+        fcr = Evaluator._false_confidence_rate(samples, correctness, threshold=0.7)
+        brier = Evaluator._brier_score(samples, correctness)
+        
+        logger.info(f"{level.name}:")
+        logger.info(f"  Samples: {len(samples)}")
+        logger.info(f"  Mean Confidence: {avg_conf:.4f}")
+        logger.info(f"  False Confidence Rate (FCR): {fcr*100:.1f}%")
+        logger.info(f"  Brier Score: {brier:.4f}")
+
+if __name__ == "__main__":
+    run_baseline_study()
