@@ -70,3 +70,27 @@ class TransformersClient(BaseLLMClient):
         )
         
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+        input_len = inputs.input_ids.shape[1]
+        
+        with torch.no_grad():
+            outputs = self.model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                temperature=temp,
+                do_sample=temp > 0,
+                return_dict_in_generate=True,
+                output_scores=True,
+                pad_token_id=self.tokenizer.eos_token_id
+            )
+            
+        gen_sequences = outputs.sequences[:, input_len:]
+        text = self.tokenizer.decode(gen_sequences[0], skip_special_tokens=True)
+        
+        # Calculate Entropy and Logprobs
+        token_logprobs = []
+        entropies = []
+        sequence_score = 0.0
+        
+        if outputs.scores:
+            for i, score_tensor in enumerate(outputs.scores):
+                # score_tensor shape: (batch_size, vocab_size)
