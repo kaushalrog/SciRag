@@ -49,6 +49,8 @@ class MetricsReport:
     abstention_precision: float
     abstention_recall: float
     ece: float
+    brier_score: float
+    fcr: float
     n_samples: int
     n_abstained: int
 
@@ -63,6 +65,8 @@ class MetricsReport:
             "abstention_precision": round(self.abstention_precision, 4),
             "abstention_recall": round(self.abstention_recall, 4),
             "ece": round(self.ece, 4),
+            "brier_score": round(self.brier_score, 4),
+            "fcr": round(self.fcr, 4),
             "n_samples": self.n_samples,
             "n_abstained": self.n_abstained,
             "abstention_rate": round(self.n_abstained / max(self.n_samples, 1), 4),
@@ -99,8 +103,14 @@ class Evaluator:
         # Abstention metrics
         abs_precision, abs_recall = self._abstention_metrics(samples)
 
+        # Correctness array for calibration metrics
+        # We consider an answer correct if ROUGE-L >= 0.3
+        correctness = [1.0 if r >= 0.3 else 0.0 for r in rouge_scores]
+
         # Calibration
-        ece = self._expected_calibration_error(samples)
+        ece = self._expected_calibration_error(samples, correctness)
+        brier = self._brier_score(samples, correctness)
+        fcr = self._false_confidence_rate(samples, correctness)
 
         answered = [s for s in samples if not s.abstained]
 
@@ -114,6 +124,8 @@ class Evaluator:
             abstention_precision=abs_precision,
             abstention_recall=abs_recall,
             ece=ece,
+            brier_score=brier,
+            fcr=fcr,
             n_samples=len(samples),
             n_abstained=sum(1 for s in samples if s.abstained),
         )
@@ -207,20 +219,14 @@ class Evaluator:
 
     @staticmethod
     def _expected_calibration_error(
-        samples: list[EvalSample], n_bins: int = 10
+        samples: list[EvalSample], correctness: list[float], n_bins: int = 10
     ) -> float:
         """
         Expected Calibration Error (ECE).
         Bins confidence scores; measures mean |confidence - accuracy| per bin.
-        Ground truth: sample is 'correct' if it answered & not truly_uncertain,
-        or abstained & truly_uncertain.
         """
         confs = np.array([s.confidence for s in samples])
-        correct = np.array([
-            (not s.abstained and not s.truly_uncertain)
-            or (s.abstained and s.truly_uncertain)
-            for s in samples
-        ], dtype=float)
+        correct = np.array(correctness, dtype=float)
 
         bins = np.linspace(0.0, 1.0, n_bins + 1)
         ece = 0.0
@@ -233,6 +239,29 @@ class Evaluator:
             ece += in_bin.sum() * abs(acc - conf)
         return float(ece / max(len(samples), 1))
 
+    @staticmethod
+    def _brier_score(samples: list[EvalSample], correctness: list[float]) -> float:
+        """Brier score: mean squared difference between confidence and actual outcome."""
+        if not samples:
+            return 0.0
+        confs = np.array([s.confidence for s in samples])
+        correct = np.array(correctness, dtype=float)
+        return float(np.mean((confs - correct) ** 2))
+
+    @staticmethod
+    def _false_confidence_rate(samples: list[EvalSample], correctness: list[float], threshold: float = 0.7) -> float:
+        """
+        False Confidence Rate (FCR):
+        Fraction of ALL samples where the model was wrong but highly confident (> threshold).
+        """
+        if not samples:
+            return 0.0
+        confs = np.array([s.confidence for s in samples])
+        correct = np.array(correctness, dtype=float)
+        
+        false_confident = ((correct == 0.0) & (confs > threshold)).sum()
+        return float(false_confident / len(samples))
+
 
 def _lcs_length(a: list[str], b: list[str]) -> int:
     """Length of longest common subsequence."""
@@ -242,3 +271,21 @@ def _lcs_length(a: list[str], b: list[str]) -> int:
         for j in range(1, n + 1):
             dp[i][j] = dp[i - 1][j - 1] + 1 if a[i - 1] == b[j - 1] else max(dp[i - 1][j], dp[i][j - 1])
     return dp[m][n]
+
+# polish: 0
+
+# polish: 1
+
+# polish: 2
+
+# polish: 3
+
+# polish: 4
+
+# polish: 5
+
+# polish: 6
+
+# polish: 7
+
+# polish: 8
