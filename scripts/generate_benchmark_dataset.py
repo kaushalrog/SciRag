@@ -52,3 +52,21 @@ def generate_samples():
         question="What were the clinical trial results for the drug Novocillin?",
         true_answer="The drug was shown to be effective.",
     )
+    base_ev3 = Evidence("Phase 3 clinical trials demonstrated that Novocillin is highly effective in treating the condition.", "Journal of Medicine", 0.95)
+    item3.evidence_by_level[ContradictionLevel.LEVEL_0_CLEAN] = [
+        base_ev3,
+        Evidence("Researchers confirmed the efficacy of Novocillin across a diverse patient group.", "Health Daily", 0.8)
+    ]
+    item3.evidence_by_level[ContradictionLevel.LEVEL_3_SEMANTIC] = [
+        base_ev3,
+        Evidence("Researchers concluded that Novocillin is completely ineffective and indistinguishable from placebo.", "Health Daily", 0.8)
+    ]
+    dataset.add_item(item3)
+
+    # Example 4: Factual/Major Contradiction
+    item4 = BenchmarkItem(
+        id="q4",
+        question="What was the outcome of the Artemis V lunar landing mission?",
+        true_answer="The mission succeeded.",
+    )
+    base_ev4 = Evidence("The Artemis V mission concluded with a successful lunar landing and safe return of the crew.", "NASA Press Release", 1.0)
