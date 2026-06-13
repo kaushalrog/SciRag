@@ -14,3 +14,11 @@ def sanity_check():
     
     # Easy Prompt
     easy_msg = [{"role": "user", "content": "What is 2 + 2? Output just the number."}]
+    res_easy = client.generate(easy_msg, max_tokens=10)
+    
+    # Hard Prompt
+    hard_msg = [{"role": "user", "content": "Explain the exact mathematical derivation of quantum gravity in 5 sentences."}]
+    res_hard = client.generate(hard_msg, max_tokens=50)
+    
+    print("\n--- SANITY CHECK RESULTS ---")
+    print(f"EASY PROMPT: {res_easy.text.strip()}")
