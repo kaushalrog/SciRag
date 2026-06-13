@@ -52,3 +52,30 @@ def run_baseline_study():
             # Generate
             logger.info(f"Generating answer for '{item.id}' at {level.name}...")
             result = llm.generate(messages, max_tokens=100)
+            
+            # Base Confidence from Entropy
+            # Map entropy -> confidence (low entropy = high confidence)
+            confidence = 1.0 / (1.0 + result.entropy)
+            
+            # Evaluate correct (simplified check)
+            # A real implementation would use ROUGE-L or an LLM-as-a-judge
+            is_correct = item.true_answer.lower() in result.text.lower() or Evaluator._rouge_l(result.text, item.true_answer) > 0.3
+            
+            # Log Failure Cases
+            failure_logger.log_case(
+                question=item.question,
+                true_answer=item.true_answer,
+                generated_answer=result.text,
+                contradiction_level=int(level),
+                confidence=confidence,
+                is_correct=is_correct
+            )
+            
+            sample = EvalSample(
+                question=item.question,
+                answer=result.text,
+                context=context,
+                reference=item.true_answer,
+                confidence=confidence,
+                abstained=False,
+                truly_uncertain=False
