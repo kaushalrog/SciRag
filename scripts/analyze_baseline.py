@@ -24,3 +24,16 @@ def analyze_baseline():
             levels[lvl]["correct"] += 1
             
         levels[lvl]["confidences"].append(case["confidence"])
+        
+        if not case["is_correct"] and case["confidence"] > 0.7:
+            levels[lvl]["fcr_count"] += 1
+
+    # Print Table
+    table_data = []
+    headers = ["Level", "Accuracy", "Avg Confidence", "Confidence Gap", "FCR"]
+
+    for lvl in sorted(levels.keys()):
+        stats = levels[lvl]
+        accuracy = stats["correct"] / stats["total"]
+        avg_conf = sum(stats["confidences"]) / len(stats["confidences"])
+        fcr = stats["fcr_count"] / stats["total"]
