@@ -34,3 +34,21 @@ def generate_samples():
         id="q2",
         question="Who was appointed as the CEO of GlobalTech in January 2024?",
         true_answer="Alice Smith",
+    )
+    base_ev2 = Evidence("In January 2024, the board unanimously appointed Alice Smith as the new CEO of GlobalTech.", "Reuters", 0.95)
+    item2.evidence_by_level[ContradictionLevel.LEVEL_0_CLEAN] = [
+        base_ev2,
+        Evidence("Alice Smith takes the helm as GlobalTech's CEO following the January board meeting.", "TechCrunch", 0.85)
+    ]
+    item2.evidence_by_level[ContradictionLevel.LEVEL_2_ENTITY] = [
+        base_ev2,
+        Evidence("Bob Jones takes the helm as GlobalTech's CEO following the January board meeting.", "TechCrunch", 0.85)
+    ]
+    dataset.add_item(item2)
+
+    # Example 3: Semantic Contradiction
+    item3 = BenchmarkItem(
+        id="q3",
+        question="What were the clinical trial results for the drug Novocillin?",
+        true_answer="The drug was shown to be effective.",
+    )
