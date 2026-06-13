@@ -34,3 +34,21 @@ class BenchmarkItem:
 
 class BenchmarkDataset:
     """
+    Manages the Contradiction Robustness Benchmark dataset.
+    Items can be loaded from or saved to disk.
+    """
+    def __init__(self, name: str = "scirag_cdc_benchmark"):
+        self.name = name
+        self.items: List[BenchmarkItem] = []
+
+    def add_item(self, item: BenchmarkItem):
+        self.items.append(item)
+
+    def save_to_disk(self, output_dir: str):
+        path = Path(output_dir)
+        path.mkdir(parents=True, exist_ok=True)
+        
+        # We can save it as a single JSON file or multiple files depending on the scale.
+        # Here we save it as a unified JSON to keep all levels of a question together.
+        data = []
+        for item in self.items:
