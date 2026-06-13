@@ -16,3 +16,21 @@ def generate_samples():
     item1 = BenchmarkItem(
         id="q1",
         question="What is the population of Metropolis as of the 2025 census?",
+        true_answer="5.0 million",
+    )
+    base_ev1 = Evidence("The 2025 official census reported the population of Metropolis at exactly 5.0 million.", "Census Bureau", 0.9)
+    item1.evidence_by_level[ContradictionLevel.LEVEL_0_CLEAN] = [
+        base_ev1,
+        Evidence("Metropolis reached a milestone of 5.0 million residents this year.", "City Council", 0.8)
+    ]
+    item1.evidence_by_level[ContradictionLevel.LEVEL_1_NUMERIC] = [
+        base_ev1,
+        Evidence("Metropolis reached a milestone of 5.1 million residents this year.", "City Council", 0.8)
+    ]
+    dataset.add_item(item1)
+
+    # Example 2: Entity Contradiction
+    item2 = BenchmarkItem(
+        id="q2",
+        question="Who was appointed as the CEO of GlobalTech in January 2024?",
+        true_answer="Alice Smith",
