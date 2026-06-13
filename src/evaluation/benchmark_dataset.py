@@ -52,3 +52,21 @@ class BenchmarkDataset:
         # Here we save it as a unified JSON to keep all levels of a question together.
         data = []
         for item in self.items:
+            item_dict = {
+                "id": item.id,
+                "question": item.question,
+                "true_answer": item.true_answer,
+                "evidence_by_level": {
+                    int(level): [asdict(e) for e in ev_list]
+                    for level, ev_list in item.evidence_by_level.items()
+                }
+            }
+            data.append(item_dict)
+
+        file_path = path / f"{self.name}.json"
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        logger.info(f"Saved {len(self.items)} benchmark items to {file_path}")
+
+    @classmethod
+    def load_from_disk(cls, file_path: str) -> "BenchmarkDataset":
