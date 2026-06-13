@@ -36,3 +36,22 @@ def test_calibrator():
     for i, case in enumerate(data):
         lvl = case["contradiction_level"]
         if lvl not in levels:
+            levels[lvl] = {
+                "correct": 0, 
+                "base_confidences": [], 
+                "calib_confidences": [], 
+                "total": 0, 
+                "base_fcr": 0,
+                "calib_fcr": 0
+            }
+        
+        is_correct = case["is_correct"]
+        base_conf = case["confidence"]
+        calib_conf = calibrator.predict_confidence(features[i])
+        
+        levels[lvl]["total"] += 1
+        if is_correct:
+            levels[lvl]["correct"] += 1
+            
+        levels[lvl]["base_confidences"].append(base_conf)
+        levels[lvl]["calib_confidences"].append(calib_conf)
