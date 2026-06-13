@@ -281,3 +281,5 @@ def _lcs_length(a: list[str], b: list[str]) -> int:
 # polish: 3
 
 # polish: 4
+
+# polish: 5
