@@ -31,3 +31,14 @@ class SimpleCalibrator:
         X = np.array(features)
         y = np.array(labels)
 
+        # Handle the edge case where all labels are the same (e.g., in tiny toy datasets)
+        if len(np.unique(y)) < 2:
+            logger.warning("Training data only has one class. LogisticRegression will fail.")
+            return
+
+        self.model.fit(X, y)
+        self.is_fitted = True
+        
+        logger.info("Calibrator fitted successfully.")
+        logger.info(f"Coefficients: {self.model.coef_}")
+        logger.info(f"Intercept: {self.model.intercept_}")
