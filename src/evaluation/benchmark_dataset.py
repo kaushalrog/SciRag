@@ -16,3 +16,21 @@ class ContradictionLevel(IntEnum):
 
 @dataclass
 class Evidence:
+    text: str
+    source: str = "Unknown"
+    source_reliability: float = 1.0
+
+@dataclass
+class BenchmarkItem:
+    id: str
+    question: str
+    true_answer: str
+    # Maps a ContradictionLevel to the specific set of retrieved documents
+    # to be used for the evaluation at that level.
+    evidence_by_level: Dict[ContradictionLevel, List[Evidence]] = field(default_factory=dict)
+
+    def get_evidence(self, level: ContradictionLevel) -> List[Evidence]:
+        return self.evidence_by_level.get(level, [])
+
+class BenchmarkDataset:
+    """
