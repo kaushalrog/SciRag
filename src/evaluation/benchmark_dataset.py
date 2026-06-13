@@ -70,3 +70,24 @@ class BenchmarkDataset:
 
     @classmethod
     def load_from_disk(cls, file_path: str) -> "BenchmarkDataset":
+        path = Path(file_path)
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        dataset = cls(name=path.stem)
+        for item_dict in data:
+            evidence_by_level = {}
+            for level_str, ev_list in item_dict.get("evidence_by_level", {}).items():
+                level = ContradictionLevel(int(level_str))
+                evidence_by_level[level] = [Evidence(**e) for e in ev_list]
+            
+            item = BenchmarkItem(
+                id=item_dict["id"],
+                question=item_dict["question"],
+                true_answer=item_dict["true_answer"],
+                evidence_by_level=evidence_by_level
+            )
+            dataset.add_item(item)
+            
+        logger.info(f"Loaded {len(dataset.items)} benchmark items from {file_path}")
+        return dataset
