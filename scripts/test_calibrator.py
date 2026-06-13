@@ -55,3 +55,22 @@ def test_calibrator():
             
         levels[lvl]["base_confidences"].append(base_conf)
         levels[lvl]["calib_confidences"].append(calib_conf)
+        
+        if not is_correct and base_conf > 0.7:
+            levels[lvl]["base_fcr"] += 1
+            
+        if not is_correct and calib_conf > 0.7:
+            levels[lvl]["calib_fcr"] += 1
+
+    # Print Comparison Table
+    table_data = []
+    headers = ["Level", "Accuracy", "Base Conf", "Calib Conf", "Base FCR", "Calib FCR"]
+
+    for lvl in sorted(levels.keys()):
+        stats = levels[lvl]
+        accuracy = stats["correct"] / stats["total"]
+        avg_base_conf = sum(stats["base_confidences"]) / len(stats["base_confidences"])
+        avg_calib_conf = sum(stats["calib_confidences"]) / len(stats["calib_confidences"])
+        
+        base_fcr = stats["base_fcr"] / stats["total"]
+        calib_fcr = stats["calib_fcr"] / stats["total"]
