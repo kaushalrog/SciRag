@@ -46,3 +46,27 @@ class TransformersClient(BaseLLMClient):
             kwargs["torch_dtype"] = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
             kwargs["device_map"] = device
             
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id)
+        self.model = AutoModelForCausalLM.from_pretrained(model_id, **kwargs)
+        self.model.eval()
+        logger.info("Model loaded successfully.")
+
+    def generate(
+        self, 
+        messages: List[Dict], 
+        temperature: Optional[float] = None,
+        max_tokens: Optional[int] = None,
+        **kwargs
+    ) -> GenerationResult:
+        
+        t0 = time.perf_counter()
+        
+        temp = temperature if temperature is not None else self.temperature
+        max_new_tokens = max_tokens or self.max_tokens
+        
+        # Format messages into prompt
+        prompt = self.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
