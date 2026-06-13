@@ -18,3 +18,8 @@ class BaseLLMClient(ABC):
     Enforces a strict return type of `GenerationResult` which contains 
     critical UQ signals (entropy, token_logprobs, sequence_score).
     """
+
+    @abstractmethod
+    def generate(self, messages: List[Dict], max_tokens: Optional[int] = None, **kwargs) -> GenerationResult:
+        """
+        Synchronous generation.
