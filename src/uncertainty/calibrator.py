@@ -20,3 +20,14 @@ class SimpleCalibrator:
     def __init__(self):
         if LogisticRegression is None:
             raise ImportError("Please install scikit-learn to use SimpleCalibrator")
+        self.model = LogisticRegression(class_weight="balanced")
+        self.is_fitted = False
+
+    def fit(self, features: List[List[float]], labels: List[float]):
+        if not features or not labels:
+            logger.warning("Empty training data provided to calibrator.")
+            return
+
+        X = np.array(features)
+        y = np.array(labels)
+
