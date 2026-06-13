@@ -11,3 +11,16 @@ def analyze_baseline():
 
     with open(log_path, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    # Group by level
+    levels = {}
+    for case in data:
+        lvl = case["contradiction_level"]
+        if lvl not in levels:
+            levels[lvl] = {"correct": 0, "confidences": [], "total": 0, "fcr_count": 0}
+        
+        levels[lvl]["total"] += 1
+        if case["is_correct"]:
+            levels[lvl]["correct"] += 1
+            
+        levels[lvl]["confidences"].append(case["confidence"])
