@@ -31,3 +31,14 @@ class FailureCaseLogger:
                  confidence_threshold: float = 0.7):
         
         # Categorize the prediction
+        if is_correct and confidence >= confidence_threshold:
+            category = "True Positive (Correct & Confident)"
+        elif not is_correct and confidence < confidence_threshold:
+            category = "True Negative (Wrong & Uncertain)"
+        elif is_correct and confidence < confidence_threshold:
+            category = "False Negative (Underconfident)"
+        else: # not is_correct and confidence >= confidence_threshold
+            if contradiction_level > 0:
+                category = "Contradictory Evidence, Still High Confidence (Primary Failure)"
+            else:
+                category = "False Positive (Overconfident)"
