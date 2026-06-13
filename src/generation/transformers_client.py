@@ -118,3 +118,28 @@ class TransformersClient(BaseLLMClient):
                     "token": self.tokenizer.decode([token_id]),
                     "logprob": chosen_logprob,
                     "entropy": entropy
+                })
+        
+        mean_entropy = np.mean(entropies) if entropies else 0.0
+        latency = (time.perf_counter() - t0) * 1000
+        
+        return GenerationResult(
+            text=text,
+            token_logprobs=token_logprobs,
+            entropy=float(mean_entropy),
+            sequence_score=float(sequence_score),
+            latency_ms=latency,
+            prompt_tokens=input_len,
+            completion_tokens=len(gen_sequences[0])
+        )
+
+    def stream(
+        self, 
+        messages: List[Dict], 
+        max_tokens: Optional[int] = None,
+        **kwargs
+    ) -> Generator[str, None, None]:
+        # For simplicity, returning the full generation block in streaming format.
+        # A real implementation would use TextIteratorStreamer.
+        result = self.generate(messages, max_tokens=max_tokens, **kwargs)
+        yield result.text
