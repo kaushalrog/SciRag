@@ -42,3 +42,14 @@ class FailureCaseLogger:
                 category = "Contradictory Evidence, Still High Confidence (Primary Failure)"
             else:
                 category = "False Positive (Overconfident)"
+        
+        case = FailureCase(
+            question=question,
+            true_answer=true_answer,
+            generated_answer=generated_answer,
+            contradiction_level=contradiction_level,
+            confidence=confidence,
+            is_correct=is_correct,
+            category=category
+        )
+        self.cases.append(case)
