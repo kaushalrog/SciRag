@@ -37,3 +37,18 @@ def analyze_baseline():
         accuracy = stats["correct"] / stats["total"]
         avg_conf = sum(stats["confidences"]) / len(stats["confidences"])
         fcr = stats["fcr_count"] / stats["total"]
+        gap = avg_conf - accuracy
+        
+        table_data.append([
+            lvl, 
+            f"{accuracy*100:.1f}%", 
+            f"{avg_conf:.4f}", 
+            f"{gap:.4f}",
+            f"{fcr*100:.1f}%"
+        ])
+        
+    print("\n=== Baseline Confidence vs Contradiction Level ===")
+    print(tabulate(table_data, headers=headers, tablefmt="github"))
+    
+if __name__ == "__main__":
+    analyze_baseline()
