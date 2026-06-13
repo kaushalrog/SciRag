@@ -53,3 +53,16 @@ class FailureCaseLogger:
             category=category
         )
         self.cases.append(case)
+
+    def export(self, filename: str = "failure_log.json"):
+        path = self.output_dir / filename
+        data = [asdict(c) for c in self.cases]
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        logger.info(f"Exported {len(data)} evaluated cases to {path}")
+
+    def summary(self) -> dict:
+        summary_counts = {}
+        for case in self.cases:
+            summary_counts[case.category] = summary_counts.get(case.category, 0) + 1
+        return summary_counts
