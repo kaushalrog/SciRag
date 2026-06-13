@@ -22,3 +22,12 @@ def sanity_check():
     
     print("\n--- SANITY CHECK RESULTS ---")
     print(f"EASY PROMPT: {res_easy.text.strip()}")
+    print(f"  Entropy: {res_easy.entropy:.6f}")
+    print(f"  Sequence Score: {res_easy.sequence_score:.6f}")
+    
+    print(f"\nHARD PROMPT: {res_hard.text.strip()}")
+    print(f"  Entropy: {res_hard.entropy:.6f}")
+    print(f"  Sequence Score: {res_hard.sequence_score:.6f}")
+    
+if __name__ == "__main__":
+    sanity_check()
