@@ -74,3 +74,23 @@ def test_calibrator():
         
         base_fcr = stats["base_fcr"] / stats["total"]
         calib_fcr = stats["calib_fcr"] / stats["total"]
+        
+        table_data.append([
+            lvl, 
+            f"{accuracy*100:.1f}%", 
+            f"{avg_base_conf:.4f}", 
+            f"{avg_calib_conf:.4f}",
+            f"{base_fcr*100:.1f}%",
+            f"{calib_fcr*100:.1f}%"
+        ])
+        
+    print("\n=== Calibrator vs Baseline ===")
+    print(tabulate(table_data, headers=headers, tablefmt="github"))
+    
+    total_base_fcr = sum(s["base_fcr"] for s in levels.values()) / len(data)
+    total_calib_fcr = sum(s["calib_fcr"] for s in levels.values()) / len(data)
+    print(f"\nOverall Baseline FCR: {total_base_fcr*100:.1f}%")
+    print(f"Overall Calibrated FCR: {total_calib_fcr*100:.1f}%")
+
+if __name__ == "__main__":
+    test_calibrator()
