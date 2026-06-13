@@ -70,3 +70,22 @@ def generate_samples():
         true_answer="The mission succeeded.",
     )
     base_ev4 = Evidence("The Artemis V mission concluded with a successful lunar landing and safe return of the crew.", "NASA Press Release", 1.0)
+    item4.evidence_by_level[ContradictionLevel.LEVEL_0_CLEAN] = [
+        base_ev4,
+        Evidence("Astronauts celebrated a flawless execution of the Artemis V lunar landing.", "Spaceflight News", 0.9)
+    ]
+    item4.evidence_by_level[ContradictionLevel.LEVEL_4_FACTUAL] = [
+        base_ev4,
+        Evidence("Tragically, the Artemis V mission failed entirely, resulting in the loss of the lunar lander.", "Spaceflight News", 0.9)
+    ]
+    dataset.add_item(item4)
+
+    # Note: In a real scenario, we would generate 100-200 of these systematically.
+    # For now, we seed the dataset with these canonical examples to test the pipeline.
+    
+    # Save to the benchmark root directory
+    output_dir = Path(__file__).parent.parent / "benchmark"
+    dataset.save_to_disk(str(output_dir))
+
+if __name__ == "__main__":
+    generate_samples()
