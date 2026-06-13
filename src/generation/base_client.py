@@ -13,3 +13,8 @@ class GenerationResult:
     completion_tokens: int = 0
 
 class BaseLLMClient(ABC):
+    """
+    Abstract base class for all LLM providers (Groq, Transformers, vLLM).
+    Enforces a strict return type of `GenerationResult` which contains 
+    critical UQ signals (entropy, token_logprobs, sequence_score).
+    """
