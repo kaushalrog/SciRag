@@ -42,3 +42,16 @@ class SimpleCalibrator:
         logger.info("Calibrator fitted successfully.")
         logger.info(f"Coefficients: {self.model.coef_}")
         logger.info(f"Intercept: {self.model.intercept_}")
+
+    def predict_confidence(self, features: List[float]) -> float:
+        """
+        Returns the calibrated probability of the answer being correct.
+        """
+        if not self.is_fitted:
+            # Fallback to raw confidence based on entropy
+            entropy = features[0]
+            return 1.0 / (1.0 + entropy)
+
+        X = np.array(features).reshape(1, -1)
+        # Returns probability of class 1 (Correct)
+        return self.model.predict_proba(X)[0][1]
