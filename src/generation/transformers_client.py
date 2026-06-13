@@ -94,3 +94,27 @@ class TransformersClient(BaseLLMClient):
         if outputs.scores:
             for i, score_tensor in enumerate(outputs.scores):
                 # score_tensor shape: (batch_size, vocab_size)
+                logits = score_tensor[0].float()
+                
+                # Apply temperature
+                if temp > 0:
+                    logits = logits / temp
+                    
+                probs = torch.softmax(logits, dim=-1)
+                log_probs = torch.log_softmax(logits, dim=-1)
+                
+                # Token entropy: -sum(p * log p). Avoid 0 * -inf = nan
+                valid_mask = probs > 0
+                entropy = -(probs[valid_mask] * log_probs[valid_mask]).sum().item()
+                entropies.append(entropy)
+                
+                # Get the logprob of the token that was actually chosen
+                token_id = gen_sequences[0][i].item()
+                chosen_logprob = log_probs[token_id].item()
+                sequence_score += chosen_logprob
+                
+                token_logprobs.append({
+                    "token_id": token_id,
+                    "token": self.tokenizer.decode([token_id]),
+                    "logprob": chosen_logprob,
+                    "entropy": entropy
