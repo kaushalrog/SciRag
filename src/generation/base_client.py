@@ -23,3 +23,13 @@ class BaseLLMClient(ABC):
     def generate(self, messages: List[Dict], max_tokens: Optional[int] = None, **kwargs) -> GenerationResult:
         """
         Synchronous generation.
+        Must calculate and populate entropy and sequence_score if available.
+        """
+        pass
+
+    @abstractmethod
+    def stream(self, messages: List[Dict], max_tokens: Optional[int] = None, **kwargs) -> Generator[str, None, None]:
+        """
+        Streaming generation, yielding text chunks.
+        """
+        pass
